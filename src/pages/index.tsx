@@ -13,7 +13,7 @@ export default function Home() {
       <Flex
         w="100vw"
         h="100vh"
-        bg="hsl(218, 23%, 16%)"
+        bg="brand.bg"
         justifyContent="center"
         alignItems="center"
         color="white"
