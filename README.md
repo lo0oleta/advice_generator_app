@@ -56,8 +56,10 @@ Advice generator app
 ## About The Project
 
 This Project uses openAI API to generate random quotes of advice.
-![](/public/screenshots/ScreenShot2.png)
 
+
+
+![](/public/screenshots/ScreenShot2.png)
 ![](/public/screenshots/ScreenShot1.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
