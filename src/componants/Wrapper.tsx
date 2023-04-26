@@ -11,7 +11,7 @@ const Wrapper = () => {
   const [loadedDataId, setLoadedDataId] = useState(null);
   const [loadedData, setLoadedData] = useState(null);
   const [prompt, setPrompt] = useState(
-    "Please give me startup idea in 1 sentence  "
+    "Please give me startup idea in 1 sentence"
   );
 
   const [error, setError] = useState(null);
