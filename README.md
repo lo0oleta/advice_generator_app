@@ -17,10 +17,11 @@ Advice generator app
     <a href="https://github.com/lo0oleta/advice_generator_app"><strong>Explore the docs »</strong></a>
     <br />
     <br />
+
     <a href="https://advice-generator-app-cyan-eight.vercel.app/">View Demo</a>
-    ·
+    
     <a href="https://github.com/lo0oleta/advice_generator_app/issues">Report Bug</a>
-    ·
+    
     <a href="https://github.com/lo0oleta/advice_generator_app/issues">Request Feature</a>
   </p>
   

@@ -10,22 +10,32 @@ const Wrapper = () => {
   const [nextFetch, setNextFetch] = useState(1);
   const [loadedDataId, setLoadedDataId] = useState(null);
   const [loadedData, setLoadedData] = useState(null);
+  const [prompt, setPrompt] = useState(
+    "Please give me startup idea in 1 sentence  "
+  );
 
   const [error, setError] = useState(null);
   const listState = useState([]);
 
   useEffect(() => {
     setClassName("rotate");
-    fetch("https://api.adviceslip.com/advice")
+    fetch("/api/advice", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ text: prompt }),
+    })
       .then((response) => {
         if (response.ok) {
           return response.json();
         }
       })
+
       .then((data) =>
         setTimeout(() => {
-          setLoadedData(data.slip.advice);
-          setLoadedDataId(data.slip.id);
+          setLoadedData(data.result.choices[0].text);
+          // setLoadedDataId(data.result.id);
           console.log(loadedData);
           console.log(loadedDataId);
         }, 3000)
