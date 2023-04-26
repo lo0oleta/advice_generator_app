@@ -17,7 +17,7 @@ Advice generator app
     <a href="https://github.com/lo0oleta/advice_generator_app"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/lo0oleta/advice_generator_app">View Demo</a>
+    <a href="https://advice-generator-app-git-feat-addhomepage-lo0oleta.vercel.app/">View Demo</a>
     ·
     <a href="https://github.com/lo0oleta/advice_generator_app/issues">Report Bug</a>
     ·
@@ -137,7 +137,7 @@ Don't forget to give the project a star! Thanks again!
 ## Contact
 
 Twitter - (https://twitter.com/loo0ooletaa)
-Project Link:(https://github.com/lo0oleta/sunnyside-agency)
+Project Link:(https://github.com/lo0oleta/advice_generator_app)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
