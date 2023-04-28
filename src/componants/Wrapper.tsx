@@ -12,7 +12,7 @@ const Wrapper = () => {
   const [nextFetch, setNextFetch] = useState(1);
   const [loadedData, setLoadedData] = useState(null);
   const [prompt, setPrompt] = useState(
-    "Please Generate tech  startup ideas that address current challenges and opportunities , while also taking into consideration the latest trends, innovations, and consumer demands in one sentence"
+    "Please generate a tech startup idea that addresses current challenges and opportunities, while also taking into consideration the latest trends, innovations, and consumer demands in one sentence."
   );
 
   const [error, setError] = useState(null);
