@@ -1,23 +1,25 @@
 import React, { useState, useEffect } from "react";
-import { Flex, Text, VStack } from "@chakra-ui/react";
+import { Flex, Text, VStack, Progress, Spinner } from "@chakra-ui/react";
 import Image from "next/image";
 import DividerDesktop from "./icon/DesktopDividerIcon";
 import Dice from "./icon/DiceIcon";
 
 const Wrapper = () => {
   const [touched, setTouched] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+
   const [className, setClassName] = useState("");
   const [nextFetch, setNextFetch] = useState(1);
-  const [loadedDataId, setLoadedDataId] = useState(null);
   const [loadedData, setLoadedData] = useState(null);
   const [prompt, setPrompt] = useState(
-    "Please give me startup idea in 1 sentence"
+    "Please Generate tech  startup ideas that address current challenges and opportunities , while also taking into consideration the latest trends, innovations, and consumer demands in one sentence"
   );
 
   const [error, setError] = useState(null);
   const listState = useState([]);
 
   useEffect(() => {
+    setIsLoading(true);
     setClassName("rotate");
     fetch("/api/advice", {
       method: "POST",
@@ -31,13 +33,10 @@ const Wrapper = () => {
           return response.json();
         }
       })
-
       .then((data) =>
         setTimeout(() => {
           setLoadedData(data.result.choices[0].text);
-          // setLoadedDataId(data.result.id);
-          console.log(loadedData);
-          console.log(loadedDataId);
+          setIsLoading(false); // Set loading to false when request completes
         }, 3000)
       )
       .catch((error) => setError(error));
@@ -63,7 +62,7 @@ const Wrapper = () => {
     >
       <Flex color="brand.header">
         <Text>ADVICE #</Text>
-        <Text textAlign="center">{loadedDataId}</Text>
+        {/* <Text textAlign="center">{loadedDataId}</Text> */}
       </Flex>
       <Text
         fontSize={["20px", "24px", "28px"]}
@@ -74,7 +73,7 @@ const Wrapper = () => {
         {`"${loadedData ? loadedData : "Loading..."}"`}
       </Text>
       <Flex position={"absolute"} maxW="80%" bottom="15%" pb="3%">
-        <DividerDesktop />
+        {/* <DividerDesktop /> */}
       </Flex>
       <Flex
         onClick={() => {
@@ -92,7 +91,7 @@ const Wrapper = () => {
         alignItems="center"
         _hover={{ shadow: "0px 0px 20px 10px " }}
       >
-        <Dice />
+          {isLoading? <Spinner/> :<Dice />}
       </Flex>
     </VStack>
   );
