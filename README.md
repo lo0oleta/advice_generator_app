@@ -17,10 +17,11 @@ Advice generator app
     <a href="https://github.com/lo0oleta/advice_generator_app"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://advice-generator-app-git-feat-addhomepage-lo0oleta.vercel.app/">View Demo</a>
-    ·
+
+    <a href="https://advice-generator-app-cyan-eight.vercel.app/">View Demo</a>
+    
     <a href="https://github.com/lo0oleta/advice_generator_app/issues">Report Bug</a>
-    ·
+    
     <a href="https://github.com/lo0oleta/advice_generator_app/issues">Request Feature</a>
   </p>
   
@@ -56,6 +57,11 @@ Advice generator app
 ## About The Project
 
 This Project uses openAI API to generate random quotes of advice.
+
+
+
+![](/public/screenshots/ScreenShot2.png)
+![](/public/screenshots/ScreenShot1.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -166,7 +172,6 @@ Those resources were helpful and would like to give credit to. I've included a f
 [issues-url]: https://github.com/lo0oleta/news-homepage/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg
 [linkedin-url]: https://www.linkedin.com/in/alaaalnous
-[product-screenshot]: images/screenshot_desktop.png
 [next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [next-url]: https://nextjs.org/
 [react.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
