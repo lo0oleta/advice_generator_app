@@ -71,7 +71,7 @@ const Wrapper = () => {
       borderRadius="15px"
     >
       <Flex color="brand.header" marginStart={5} marginEnd={5}>
-        <Text fontSize={25} noOfLines={2} textAlign="center" maxW="100%">
+        <Text fontSize={25} textAlign="center" maxW="100%">
           Please feel free to indicate your desired major in the input box
           provided
         </Text>
@@ -108,7 +108,7 @@ const Wrapper = () => {
             type="submit"
             className={className}
             position="absolute"
-            bottom="-22.5px"
+            bottom="-45px"
             left="calc(50% - 22.5px)"
             bg="brand.header"
             borderRadius="50%"
@@ -125,7 +125,7 @@ const Wrapper = () => {
       </Formik>
       <Flex color="brand.header"></Flex>
       <Text
-        fontSize={["20px", "24px", "28px"]}
+        fontSize={["16px", "18px", "20px"]}
         maxW="95%"
         textAlign="center"
         pb="6%"
